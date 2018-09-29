@@ -126,7 +126,7 @@ from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix
 C = confusion_matrix([np.argmax(y) for y in Y_test], [np.argmax(y) for y in pred])
 
-print C / C.astype(np.float).sum(axis=1)
+print (C / C.astype(np.float).sum(axis=1))
 
 # Classification
 # [[ 0.75510204  0.24489796]
